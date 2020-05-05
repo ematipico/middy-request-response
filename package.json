@@ -21,7 +21,7 @@
     "node": ">=10"
   },
   "files": [
-    "./lib"
+    "lib/*"
   ],
   "keywords": [
     "middy",
