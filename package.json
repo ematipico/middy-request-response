@@ -1,6 +1,6 @@
 {
   "name": "@ematipico/middy-request-response",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates a pair request/response objects from AWS lambda",
   "main": "lib/index.js",
   "publishConfig": {
