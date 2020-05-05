@@ -1,6 +1,6 @@
 import middy from '@middy/core';
 import responseResponse, { RequestResponseContext, RequestResponseMiddleWare } from '../src';
-import { invoke } from './testUtils';
+import { invoke } from '../testUtils';
 
 describe('The middleware', () => {
 	it('should return the objects inside the context', async () => {
