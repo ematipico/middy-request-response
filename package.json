@@ -1,7 +1,7 @@
 {
   "name": "@ematipico/middy-request-response",
   "version": "1.0.0",
-  "description": "Creates a pair request/response objects from API Gateway event",
+  "description": "Creates a pair request/response objects from AWS lambda",
   "main": "index.js",
   "publishConfig": {
     "access": "public"

@@ -2,6 +2,12 @@
 
 Creates a request/response objects from API Gateway event.
 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Why](#why)
+- [Where](#where)
+
+
 ## Installation
 
 ```bash
@@ -33,3 +39,20 @@ const handler = middy(renderRequest)
 module.exports = { handler }
 
 ```
+
+## Why
+
+The reason why I created this package, is that because sometimes it is difficult to unify a lambda environment with a
+usual server where most of the people are comfortable with.
+
+Most of the times we create a local server inside the lambda.
+
+This middleware wants to mimic the same behaviour without creating a local server. The middleware creates two objects 
+called `response` and `request` and will try to mimic as much as possible the behaviours of
+ [`http.IncomingMessage`](https://nodejs.org/api/http.html#http_class_http_incomingmessage)  and   
+[`http.ServerResponse`](https://nodejs.org/api/http.html#http_class_http_serverresponse).
+
+## Where
+
+This middleware can be used in advanced frontend cases where you want to store your pages on a lambda, and you'd need a 
+`request` and `response` objects to feed to your frontend frameworks such as Next.js or Nuxt.js.
