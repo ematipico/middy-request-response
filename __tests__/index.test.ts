@@ -60,7 +60,7 @@ describe('The middleware', () => {
 		const response = await invoke(handler, event);
 
         expect(response.end).toHaveBeenCalled();
-        expect(response.body).toEqual('<html></html>')
+        expect(response.toResponse.body).toEqual('<html></html>')
         expect(response.statusCode).toEqual(200)
 	});
 });
